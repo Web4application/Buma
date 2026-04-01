@@ -1,1 +1,117 @@
-utilities/derived-variables.scss
+$scheme-main
+iv.$white
+$scheme-main-bis
+iv.$white-bis
+$scheme-main-ter
+iv.$white-ter
+$scheme-invert
+iv.$black
+$scheme-invert-bis
+iv.$black-bis
+$scheme-invert-ter
+iv.$black-ter
+$text
+iv.$grey-dark
+$text-invert
+fn.bulmaFindColorInvert($text)
+$text-weak
+iv.$grey
+$text-strong
+iv.$grey-darker
+$primary
+iv.$turquoise
+$info
+iv.$cyan
+$success
+iv.$green
+$warning
+iv.$yellow
+$danger
+iv.$red
+$light
+iv.$white-ter
+$dark
+iv.$grey-darker
+$link
+iv.$blue
+$background
+iv.$white-ter
+$border
+iv.$grey-lighter
+$border-weak
+iv.$grey-lightest
+$code
+iv.$red
+$code-background
+$background
+$pre
+$text
+$pre-background
+$background
+$family-primary
+iv.$family-sans-serif
+$family-secondary
+iv.$family-sans-serif
+$family-code
+iv.$family-monospace
+$size-small
+iv.$size-7
+$size-normal
+iv.$size-6
+$size-medium
+iv.$size-5
+$size-large
+iv.$size-4
+$shadow-color
+iv.$black
+$custom-colors
+null
+$custom-shades
+null
+$colors
+fn.mergeColorMaps(
+  (
+    "white": (
+      iv.$white,
+      iv.$black,
+    ),
+    "black": (
+      iv.$black,
+      iv.$white,
+    ),
+    "light": (
+      $light,
+      $dark,
+    ),
+    "dark": (
+      $dark,
+      $light,
+    ),
+    "text": $text,
+    "primary": $primary,
+    "link": $link,
+    "info": $info,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+  ),
+  $custom-colors
+)
+$shades
+fn.mergeColorMaps(
+  (
+    "black-bis": iv.$black-bis,
+    "black-ter": iv.$black-ter,
+    "grey-darker": iv.$grey-darker,
+    "grey-dark": iv.$grey-dark,
+    "grey": iv.$grey,
+    "grey-light": iv.$grey-light,
+    "grey-lighter": iv.$grey-lighter,
+    "white-ter": iv.$white-ter,
+    "white-bis": iv.$white-bis,
+  ),
+  $custom-shades
+)
+$sizes
+iv.$size-1 iv.$size-2 iv.$size-3 iv.$size-4 iv.$size-5 iv.$size-6
+  iv.$size-7
